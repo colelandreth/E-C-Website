@@ -14,20 +14,27 @@ body {
   background-color: #fcfcfc;
   color: #295c9e;
   font-family: 'Oswald', sans-serif;
+/*  width: 80% auto;
+  padding: 10px 10%; */
+}
+
+.body {
   width: 80% auto;
-  padding: 10px 50px;
+  padding: 10px 10%;
 }
 
 header {
-
+ padding-top: 40px;
 }
 
 header a {
   float: right;
-  padding: 5px 5px;
+  width: 200px;
+  padding: 10px 10px;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 header a:hover{
@@ -36,9 +43,9 @@ header a:hover{
 
 h1 {
   font-weight: bold;
-  padding-top: 100px;
+  padding-top: 200px;
   text-align: center;
-  font-size: 60px;
+  font-size: 3.75em;
 }
 
 h2 {
@@ -49,15 +56,46 @@ h2 {
 }
 
 footer {
-  text-align: center;
+  /* text-align: center;
   padding-top: 100px;
+  clear: both;
+  background-color: grey;
+  width: 100%; */
+
+   position: sticky bottom;
+   width: 100%;
+   background-color: grey;
+   text-align: center;
+   padding: 1%;
+   position: absolute;
 }
+
+footer div {
+  width: 25%;
+}
+
+footer img {
+  width: 200px;
+  float: left;
+  padding: 63px;
+}
+
+div {
+  border: 2px;
+}
+
+p {
+  color: #665b25;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Class Selectors */
 
 .logo {
   float: left;
   width: 200px;
-  padding: 0px 20px;
+  margin-top: -30px;
 }
 
 .topPhone {
@@ -68,49 +106,120 @@ footer {
 .topPhone a {
   text-decoration: none;
   color: #295c9e;
+  min-width: inherit;
 }
 
 .topPhone a:hover {
   color: black;
 }
 
+.break {
+  padding: 10px;
+}
+
+
 .mainImg {
   background:
-    #ffffff url('https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg?') no-repeat center;
+    #ffffff url('https://i.imgur.com/8Q4QTcU.jpg') no-repeat center;
   width: 100%;
   height: 410px;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 1;
   background-size: cover;
+  margin-top: 50px;
 }
 
 .mainInfo {
-  text-align: left;
+  text-align: center;
   padding: 50px 50px;
+  clear: both;
+  letter-spacing: 1px;
 }
 
 .mainInfo h3 {
   text-align: center;
   font-size: 40px;
-  padding-top: 200px;
+  padding-top: 20px;
 }
 
 .mainInfo p {
     font-size: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 10px;
-}
-
-.gmap_canvas {
-  margin: 50px 200px;
-}
-
-.address {
-  float: right;
 }
 
 .tri {
   padding-top: 100px;
-  float: inherit;
+  text-align: center;
+}
+
+.tri h3 {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-size: 30px;
+}
+
+.tri p {
+  padding-left: 1px;
+}
+
+.speed {
+  float: left;
+  width: 31%;
+  margin: .5%;
+  border-radius: 25px;
+  border: 2px clear;
+  min-height: 20em;
+  box-shadow:0px 0px 4px 4px #6b6b6b;
+}
+
+.customercare {
+ float: left;
+ width: 31%;
+ margin: .5%;
+ border-radius: 25px;
+ border: 2px clear;
+ min-height: 20em;
+ box-shadow:0px 0px 4px 4px #6b6b6b;
+}
+
+.deals {
+  float: left;
+  margin: .5%;
+  width: 31%;
+  border-radius: 25px;
+  border: 2px clear;
+  min-height: 20em;
+  box-shadow:0px 0px 4px 4px #6b6b6b;
+}
+
+.reviews {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.reviews h1 {
+padding-top: 500px;
+}
+
+.reviews p {
+ padding-top: 100px;
+ width: 60%;
+ display: inline-block;
+}
+
+.reviews i {
+  float: right;
+}
+
+.contactinfo {
+  float:left;
+  padding: 50px 20px 20px 20px;
+}
+
+.servicearea {
+  float:left;
+  padding: 20px 20px;
+}
+
+.quicklinks {
+  float:right;
+  padding: 20px 20px;
 }
