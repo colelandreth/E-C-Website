@@ -129,10 +129,6 @@ a:hover {
   color: black;
 }
 
-.break {
-  padding: 10px;
-}
-
 
 .mainImg {
   background:
@@ -142,7 +138,7 @@ a:hover {
   object-fit: cover;
   opacity: 1;
   background-size: cover;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .mainInfo {
@@ -257,10 +253,16 @@ padding-top: 500px;
     width: 100%;
      overflow-x:hidden;
   }
+
+  .topPhone a {
+  padding-right: 0px;
+
+  }
+
   .nav {
     float: none;
-    width: 100%;
-    padding: 15%;
+    width: 75%;
+    padding: 15% 15% 30% 15%;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -272,7 +274,7 @@ padding-top: 500px;
     margin: auto;
   }
   .mainImg {
-      margin-top: 50%;
+      margin-top: 60%;
       width: 100%;
     }
   .speed,
