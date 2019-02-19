@@ -25,6 +25,7 @@ body {
 
 header {
  padding-top: 40px;
+ width: 100%;
 }
 
 header a {
@@ -64,7 +65,7 @@ footer {
 
    position: sticky bottom;
    width: 100%;
-   background-color: grey;
+   background-color: lightgrey;
    text-align: center;
    padding: 1%;
    position: absolute;
@@ -77,26 +78,42 @@ footer div {
 footer img {
   width: 200px;
   float: left;
-  padding: 63px;
+  padding: 63px 63px 63px 300px;
 }
 
+/* footer img {
+  width: 200px;
+  float: left;
+  padding: 63px;
+}
+*/
 div {
   border: 2px;
 }
 
 p {
   color: #665b25;
+  font-family: 'Lato', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: #295c9e;
+}
+
+a:hover {
+  color: black;
+}
 /* Class Selectors */
 
 .logo {
   float: left;
   width: 200px;
   margin-top: -30px;
-}
+  padding-left: 10px;
+  }
 
 .topPhone {
   padding: 3px 1px;
@@ -106,7 +123,7 @@ p {
 .topPhone a {
   text-decoration: none;
   color: #295c9e;
-  min-width: inherit;
+
 }
 
 .topPhone a:hover {
@@ -216,10 +233,85 @@ padding-top: 500px;
 
 .servicearea {
   float:left;
-  padding: 20px 20px;
+  width: 100px;
+  padding: 70px;
 }
 
-.quicklinks {
-  float:right;
-  padding: 20px 20px;
+.servicearea img {
+  width: 30px;
+  padding: 10px;
 }
+
+.servicearea img:hover{
+  width: 30px;
+  opacity: .7;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    margin: auto;
+    padding-top: 0;
+  }
+
+  body {
+    width: 100%;
+  }
+  .nav {
+    float: none;
+    width: 100%;
+    padding: 15%;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .logo {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+  }
+  .mainImg {
+      margin-top: 50%;
+      width: 100%;
+    }
+  .speed,
+  .customercare,
+  .deals {
+    float: none;
+    margin-top: 2em;
+    width: auto;
+  }
+
+  .servicearea {
+    float:left;
+    width: 80%;
+    padding: 70px;
+  }
+
+  .servicearea img {
+    width: 30px;
+    padding: 10px;
+  }
+
+footer {
+  width: 100%;
+}
+
+footer img {
+  width: 70%;
+  float: none;
+  padding: 63px;
+  margin: auto;
+}
+
+
+  footer div,
+  p {
+    width: 100%;
+    float: none;
+  }
+
+  div {
+        width: 100% auto;
+      }
